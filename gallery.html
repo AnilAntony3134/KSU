@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSU Ivanios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="photos/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Gallery</h1>
+    </section>
+
+<!---------------Gallery Content------------->
+<section class="gallery">
+    <div class="row">
+      <input type="radio" name="Photos" id="check1" checked>
+      <input type="radio" name="Photos" id="check2">
+      <input type="radio" name="Photos" id="check3">
+      <input type="radio" name="Photos" id="check4">
+
+      <div class="gallery-col">
+          <h1>Our Photo Gallery</h1>
+          <div class="top-content">
+              <h3>Photo Gallery</h3>
+              <label for="check1">All photos</label>
+              <label for="check2">Arts</label>
+              <label for="check3">Sports</label>
+              <label for="check4">Events</label>
+          </div>
+          <div class="photo-gallery">
+              <div class="pic place">
+                  <img src="photos/img47.jpg">
+              </div>
+              <div class="pic arts">
+                <img src="photos/Copy of IMG_20190528_184035.jpg">
+            </div>
+            <div class="pic sports">
+                <img src="photos/IMG-20201009-WA0093.jpg">
+            </div>
+            <div class="pic events">
+                <img src="photos/FB_IMG_1609823219166.jpg">
+            </div>
+            <div class="pic arts">
+              <img src="photos/FB_IMG_1619172151027.jpg">
+            </div>
+            <div class="pic sports">
+              <img src="photos/Photo from Mobin Sebastian.jpg">
+            </div>
+            <div class="pic events">
+            <img src="photos/IMG-20201009-WA0087.jpg">
+            </div>
+            <div class="pic arts">
+               <img src="photos/img369.jpg">
+            </div>
+            <div class="pic sports">
+               <img src="photos/IMG-20210213-WA0057.jpg">
+            </div>
+            <div class="pic events">
+                <img src="photos/IMG-20190702-WA0062.jpg">
+            </div>
+            <div class="pic arts">
+              <img src="photos/img6.jpg">
+          </div>
+          <div class="pic sports">
+              <img src="photos/20170110_105741.jpg">
+          </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+<!---------------Footer------------->
+<section class="footer">
+    <h4>
+        About Us
+    </h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eum id obcaecati aperiam, praesentium dignissimos consequatur maxime asperiores quos sed quod repudiandae cupiditate deleniti, nam laboriosam voluptas, natus quisquam corporis?</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Anil Antony</p>
+
+</section>
+
+<!----------JAvascript for toggle menu ----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
